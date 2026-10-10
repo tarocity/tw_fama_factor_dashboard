@@ -18,4 +18,21 @@ This project involves:
 ---
 ## 🏗️ Data Architecture
 The data architecture for this project follows Medallion Architecture **Bronze**, **Silver**, and **Gold** layers:
-![Data Architecture](docs/Data_Architecture.png.png)
+![Data_Architecture](docs/Data_Architecture.png)
+
+1. **Bronze Layer**: Stores data that has been preprocessed using Python. Data is loaded from CSV files into SQL Server.
+2. **Silver Layer**: Cleans, standardizes, and transforms data, including calculating derived columns, to prepare data for portfolio construction.
+3. **Gold Layer**: Constructs Fama-French factors and portfolios to create dashboard-ready datasets for Tableau Public.
+
+---
+## 🔀 Data Flow
+The diagram below illustrates how data flows through the Bronze, Silver, and Gold layers, highlighting data transformations and dependencies between tables.
+![Data_Flow](docs/Data_Flow.png)
+
+---
+## 🛠️ Important Links & Tools:
+
+
+
+
+
