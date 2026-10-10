@@ -25,7 +25,7 @@ The data architecture for this project follows Medallion Architecture **Bronze**
 3. **Gold Layer**: Constructs Fama-French factors and portfolios to create dashboard-ready datasets for Tableau Public.
 
 ---
-## 🔀 Data Flows
+## 🔀 Data Flow
 The diagram below illustrates how data flows through the Bronze, Silver, and Gold layers, highlighting data transformations and dependencies between tables.
 ![Data_Flow](docs/Data_Flow.png)
 
@@ -37,37 +37,32 @@ The diagram below illustrates how data flows through the Bronze, Silver, and Gol
   - [FinMind](https://finmind.github.io/tutor/TaiwanMarket/DataList/): Market and financial data.
   - [Investing.com](https://hk.investing.com/rates-bonds/taiwan-10-year-bond-yield-historical-data): Taiwan 10-year government bond yield data.
 - **[Kenneth R. French Website](https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/f-f_5_factors_2x3.html)**: Fama-French factor calculation methods.
-- **[draw.io](https://www.drawio.com/):** Create data architecture, data flows, and Tableau dashboard structure diagram.
-- **[Photopea](https://www.photopea.com/l/zh_tw/)**: Change the colors of dashboard icons.
+- **[draw.io](https://www.drawio.com/):** Create data architecture, data flows, and Tableau dashboard layout diagram.
+- **[Photopea](https://www.photopea.com/l/zh_tw/)**: Change the colors of icons used in the dashboard.
 - **[Tableau Public]()**: Interactive dashboard for Taiwan Fama-French factors and portfolios.
 
 ---
 ## 📂 Repository Structure
 ```
-data-warehouse-project/
+project/
 │
-├── datasets_csv/                       # Raw datasets used for the project (ERP and CRM data)
+├── datasets_csv/                       # Raw and preprocessed datasets used for the project
 │
-├── docs/                               # Project documentation and architecture details
-│   ├── etl.drawio                      # Draw.io file shows all different techniquies and methods of ETL
-│   ├── data_architecture.drawio        # Draw.io file shows the project's architecture
-│   ├── data_catalog.md                 # Catalog of datasets, including field descriptions and metadata
-│   ├── data_flow.drawio                # Draw.io file for the data flow diagram
-│   ├── data_models.drawio              # Draw.io file for data models (star schema)
-│   ├── naming-conventions.md           # Consistent naming guidelines for tables, columns, and files
-│
-├── scripts_sql/                            # SQL scripts for ETL and transformations
-│   ├── bronze/                         # Scripts for extracting and loading raw data
+├── docs/                               # Project documentation
+│   ├── factor_project.drawio           # Draw.io diagrams for data architecture, data flow, and Tableau dashboard layout
+│   ├── factor_dashboard.twbx           # Tableau workbook of Taiwan Fama-French factors and portfolios
+│   └── fama_portfolio_calc.ipynb       # JupyterLab file demonstrating the calculation process for quarterly-rebalanced portfolios in Python
+│  
+├── scripts_sql/                        # SQL scripts for ETL and transformations
+│   ├── init_database.sql               # Script for creating database and schemas
+│   ├── bronze/                         # Scripts for loading raw data
 │   ├── silver/                         # Scripts for cleaning and transforming data
-│   ├── gold/                           # Scripts for creating analytical models
+│   ├── gold/                           # Scripts for constructing Fama-French factors and portfolios 
 │
-├── scripts_py/                         # Test scripts and quality files
+├── scripts_py/                         # Python scripts for getting FinMind KPI data, converting CSV encoding and connecting to SQL Server,etc 
 │
-├── png/                                # Test scripts and quality files
+├── png/                                # png files for icons used in Tableau dashboard
 │
 └── README.md                           # Project overview and instructions
 ```
-
-
-
 
