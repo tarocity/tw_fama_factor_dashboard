@@ -1,6 +1,6 @@
 # Taiwan Fama-French Factor Dashboard
 
-Welcome to the **Fama-French Factor Dashboard Project** repository! 📊    
+Welcome to the **Taiwan Fama-French Factor Dashboard Project** repository! 📊    
 This project presents an end-to-end workflow for constructing Fama-French factors and developing a Tableau dashboard for the Taiwan stock market.
 The project integrates **Python**, **SQL Server**, and **Tableau** to build a structured data pipeline, construct factor-based portfolios, and create interactive visualizations.
 
@@ -68,3 +68,6 @@ taiwan-fama-french-factor-dashboard/
 └── README.md                           # Project overview and instructions
 ```
 
+---
+## 🙏 Acknowledgments
+The database architecture and README structure were inspired by [sql-data-warehouse-project](https://github.com/DataWithBaraa/sql-data-warehouse-project), created by DataWithBaraa.
