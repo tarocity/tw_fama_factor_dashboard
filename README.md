@@ -1,4 +1,4 @@
-# tw_fama_factor_dashboard
+# Taiwan Fama-French Factor Dashboard
 
 Welcome to the **Fama-French Factor Dashboard Project** repository! 📊    
 This project presents an end-to-end workflow for constructing Fama-French factors and developing a Tableau dashboard for the Taiwan stock market.
@@ -32,6 +32,8 @@ The diagram below illustrates how data flows through the Bronze, Silver, and Gol
 ---
 ## 🛠️ Important Links & Tools:
 
+- **Spyder**: IDE for writing Python scripts.
+- **SQL Server Management Studio (SSMS)**: GUI for managing and interacting with databases.
 - **Data Sources**
   - [MOPS](https://mops.twse.com.tw/mops/#/web/t51sb01): Company information data.
   - [FinMind](https://finmind.github.io/tutor/TaiwanMarket/DataList/): Market and financial data.
@@ -44,7 +46,7 @@ The diagram below illustrates how data flows through the Bronze, Silver, and Gol
 ---
 ## 📂 Repository Structure
 ```
-project/
+taiwan-fama-french-factor-dashboard/
 │
 ├── datasets_csv/                       # Raw and preprocessed datasets used for the project
 │
@@ -57,7 +59,7 @@ project/
 │   ├── init_database.sql               # Script for creating database and schemas
 │   ├── bronze/                         # Scripts for loading raw data
 │   ├── silver/                         # Scripts for cleaning and transforming data
-│   ├── gold/                           # Scripts for constructing Fama-French factors and portfolios 
+│   └── gold/                           # Scripts for constructing Fama-French factors and portfolios 
 │
 ├── scripts_py/                         # Python scripts for getting FinMind KPI data, converting CSV encoding and connecting to SQL Server,etc 
 │
