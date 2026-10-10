@@ -14,3 +14,8 @@ This project involves:
 3. **Data Processing & Transformation**: Cleaning and transforming raw data into dashboard-ready datasets.
 4. **Factor & Portfolio Construction**: Constructing Fama-French factors and factor-sorted portfolios in SQL Server.
 5. **Dashboard & Analytics**: Developing an interactive Tableau dashboard to analyze historical performance and calculate risk-return metrics.
+
+---
+## 🏗️ Data Architecture
+The data architecture for this project follows Medallion Architecture **Bronze**, **Silver**, and **Gold** layers:
+![Data Architecture](docs/Data_Architecture.png.png)
